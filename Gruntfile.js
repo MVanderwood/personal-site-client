@@ -10,7 +10,7 @@
 module.exports = function (grunt) {
 
     // Load grunt tasks automatically
-    require('load-grunt-tasks')('grunt');
+    require('load-grunt-tasks')(grunt);
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
@@ -154,24 +154,24 @@ module.exports = function (grunt) {
         },
 
         // Make sure there are no obvious mistakes
-        jshint: {
-            options: {
-                jshintrc: '.jshintrc',
-                reporter: require('jshint-stylish')
-            },
-            all: {
-                src: [
-                    'Gruntfile.js',
-                    '<%= yeoman.app %>/scripts/{,*/}*.js'
-                ]
-            },
-            test: {
-                options: {
-                    jshintrc: 'test/.jshintrc'
-                },
-                src: ['test/spec/{,*/}*.js']
-            }
-        },
+        // jshint: {
+        //     options: {
+        //         jshintrc: '.jshintrc',
+        //         reporter: require('jshint-stylish')
+        //     },
+        //     all: {
+        //         src: [
+        //             'Gruntfile.js',
+        //             '<%= yeoman.app %>/scripts/{,*/}*.js'
+        //         ]
+        //     },
+        //     test: {
+        //         options: {
+        //             jshintrc: 'test/.jshintrc'
+        //         },
+        //         src: ['test/spec/{,*/}*.js']
+        //     }
+        // },
 
         // Make sure code styles are up to par
         // jscs: {
@@ -249,9 +249,9 @@ module.exports = function (grunt) {
 
         // Automatically inject Bower components into the app
         wiredep: {
-            options: {
-                cwd: '<%= yeoman.app %>'
-            },
+            // options: {
+            //     cwd: '<%= yeoman.app %>'
+            // },
             app: {
                 src: ['<%= yeoman.app %>/index.html'],
                 ignorePath:  /\.\.\//

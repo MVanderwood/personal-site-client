@@ -7,24 +7,24 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+
+        <!-- Theme Stylesheets -->
+        <link rel="stylesheet" href="styles/Artificial-Reason/style-gray.css">
+        <!-- Theme Stylesheets end -->
     </head>
     <body ng-app="personalAppClient">
 
-        <div ng-view=""></div> <!-- View Insert -->
+        <div class="container">
+            <div class="navbar">
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-            !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-            (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-            r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-            }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            </div>
+            <div ng-view=""></div> <!-- View Insert -->
 
-            ga('create', 'UA-XXXXX-X');
-            ga('send', 'pageview');
-    </script>
+        </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/angular/angular.js"></script>
     <script src="../bower_components/angular-animate/angular-animate.js"></script>
     <script src="../bower_components/angular-resource/angular-resource.js"></script>
@@ -39,5 +39,33 @@
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <!-- endbuild -->
+
+    <!-- Theme Scripts -->
+    <script src="scripts/Artificial-Reason/vendors.js"></script>
+    <script src="scripts/Artificial-Reason/app.js"></script>
+    <script src="scripts/Artificial-Reason/carousels.js"></script>
+    <script src="scripts/Artificial-Reason/coming.js"></script>
+    <script src="scripts/Artificial-Reason/coming2.js"></script>
+    <script src="scripts/Artificial-Reason/commerce.js"></script>
+    <script src="scripts/Artificial-Reason/DropdownHover.js"></script>
+    <script src="scripts/Artificial-Reason/e-commerce_product.js"></script>
+    <script src="scripts/Artificial-Reason/holder.js"></script>
+    <script src="scripts/Artificial-Reason/home_full.js"></script>
+    <script src="scripts/Artificial-Reason/home_inverse_navbar.js"></script>
+    <script src="scripts/Artificial-Reason/home_lead.js"></script>
+    <script src="scripts/Artificial-Reason/home_login_full.js"></script>
+    <script src="scripts/Artificial-Reason/home_plan.js"></script>
+    <script src="scripts/Artificial-Reason/home_product.js"></script>
+    <script src="scripts/Artificial-Reason/home_profile.js"></script>
+    <script src="scripts/Artificial-Reason/home_services.js"></script>
+    <script src="scripts/Artificial-Reason/html5shiv.min.js"></script>
+    <script src="scripts/Artificial-Reason/index.js"></script>
+    <script src="scripts/Artificial-Reason/page_charts.js"></script>
+    <script src="scripts/Artificial-Reason/portfolio.js"></script>
+    <script src="scripts/Artificial-Reason/respond.min.js"></script>
+    <script src="scripts/Artificial-Reason/slidebars.js"></script>
+    <script src="scripts/Artificial-Reason/styleswitcher_leadpage.js"></script>
+    <script src="scripts/Artificial-Reason/styleswitcher.js"></script>
+    <!-- Theme Scripts end -->
 </body>
 </html>

@@ -1,5 +1,10 @@
-'use strict';
+(function() {
+    'use strict';
 
-angular.module('personalAppClient').controller('main', [function() {
-    
-}]);
+    angular
+        .module('personalAppClient')
+        .controller('mainController', ['$scope', function($scope) {
+
+            window.$scope = $scope;
+        }]);
+})();

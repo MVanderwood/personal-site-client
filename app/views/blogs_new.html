@@ -1,0 +1,9 @@
+<div ng-controller="blogsController" ng-init="new()">
+    <form>
+        <label for="title">Title</label>
+        <input type="text" name="title" ng-model="blog.title"><br>
+        <label for="content">Content</label>
+        <textarea name="name" rows="8" cols="40" ng-model="blog.content"></textarea>
+        <button ng-click="saveBlog(blog)">Submit</button>
+    </form>
+</div>

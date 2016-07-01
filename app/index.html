@@ -14,18 +14,8 @@
     </head>
     <body ng-app="personalAppClient">
 
-        <div class="sb-site-container">
-            <header class="main-header">
-                <div class="container">
-                    <h1 class="page-title">Michael Vanderwood</h1>
-                    <ol class="breadcrumb pull-right">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                    </ol>
-                </div>
-            </header>
-            <div ng-view=""></div> <!-- View Insert -->
-
+        <div class="container">
+            <div ng-view></div> <!-- View Insert -->
         </div>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -43,6 +33,9 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/routes.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/blogs.js"></script>
+
+    <script src="scripts/models/blog.js"></script>
     <!-- endbuild -->
 
     <!-- Theme Scripts -->

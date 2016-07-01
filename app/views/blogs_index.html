@@ -1,0 +1,9 @@
+<div ng-controller="blogsController" ng-init="index()">
+    <div ng-repeat="blog in blogs">
+        {{ blog.id }}
+        {{ blog.title }}
+        {{ blog.content }}
+        {{ blog.createdAt }}
+        {{ blog.updatedAt }}
+    </div>
+</div>
